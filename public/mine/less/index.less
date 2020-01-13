@@ -1,0 +1,107 @@
+@import 'layout';
+.table.table-bordered th, .table.table-bordered td {
+    text-align: center;
+    vertical-align: middle;
+}
+.aside.hidemenu {
+    left: -180px;
+}
+.main.hidemenu {
+    padding-left: 0px;
+}
+.top.hidemenu {
+    padding-left: 0px;
+}
+.red{
+    color: #A94442;
+}
+.echarts_1, .echarts_2 {
+    width: 48%;
+    height: 400px;
+}
+.mb_20 {
+    margin-bottom: 20px;
+}
+.aside{
+    width: 180px;
+    height: 100%;
+    background-color: #222d32;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all 1s;
+    .brand{
+        height: 50px;
+        line-height: 50px;
+        font-size: 24px;
+        text-align: center;
+        a{
+            color: #fff;
+        }
+    }
+    .user{
+        padding-top: 30px;
+        height: 180px;
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        p{
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    .nav{
+        .child a{
+            padding-left: 70px;
+        }
+        a.current{
+            background-color: #1d1f21;
+            border-left: 3px solid #006699;
+        }
+        a{
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            color: #fff;
+            padding-left: 50px;
+            border-left: 3px solid transparent;
+        }
+    }
+}
+.main{
+    height: 100%;
+    width: 100%;
+    padding-left: 180px;
+    padding-top: 50px;
+    transition: all 1s;
+    .breadcrumb{
+        margin-top: 20px;
+    }
+}
+.main-top{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: #3c8dbc;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-left: 180px;
+    transition: all 1s;
+    z-index: 666;
+    a{
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        text-align: center;
+    }
+}

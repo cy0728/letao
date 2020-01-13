@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* css reset 样式重置*/
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  /*所有盒子布局采用内减模式*/
+  -webkit-box-sizing: border-box;
+  /* 兼容-webkit-内核浏览器 */
+  box-sizing: border-box;
+  /*去除移动端点击高亮颜色*/
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  /*后面的都是 备胎*/
+}
+ol,
+ul {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+input {
+  border: none;
+  outline: none;
+  /* 在 移动端浏览器 表单可能会出现 阴影 高亮 3d效果,需要清除*/
+  -webkit-appearance: none;
+}
+/* 废物利用 */
+em,
+i {
+  font-style: normal;
+}
+/*commom css 公共样式*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  line-height: 0;
+  visibility: hidden;
+  height: 0;
+}
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
+.aside.hidemenu {
+  left: -180px;
+}
+.main.hidemenu {
+  padding-left: 0px;
+}
+.top.hidemenu {
+  padding-left: 0px;
+}
+.red {
+  color: #A94442;
+}
+.echarts_1,
+.echarts_2 {
+  width: 48%;
+  height: 400px;
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+.aside {
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 1s;
+}
+.aside .brand {
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  text-align: center;
+}
+.aside .brand a {
+  color: #fff;
+}
+.aside .user {
+  padding-top: 30px;
+  height: 180px;
+}
+.aside .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.aside .user p {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.aside .nav .child a {
+  padding-left: 70px;
+}
+.aside .nav a.current {
+  background-color: #1d1f21;
+  border-left: 3px solid #006699;
+}
+.aside .nav a {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: #fff;
+  padding-left: 50px;
+  border-left: 3px solid transparent;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  padding-left: 180px;
+  padding-top: 50px;
+  transition: all 1s;
+}
+.main .breadcrumb {
+  margin-top: 20px;
+}
+.main-top {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background-color: #3c8dbc;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-left: 180px;
+  transition: all 1s;
+  z-index: 666;
+}
+.main-top a {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+}
